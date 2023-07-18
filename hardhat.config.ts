@@ -30,6 +30,14 @@ const config: HardhatUserConfig = {
     // (required) Each object in this array refers to a separate circuit
     circuits: JSON.parse(JSON.stringify(circuits))
   },
+  networks: {
+    goerli: {
+      url: "https://rpc.ankr.com/eth_goerli", // Replace with your Infura Project ID or Goerli node URL
+      accounts: {
+        mnemonic: "song typical display now analyst noise noise wide cost venture awake canal" // Replace with your actual mnemonic phrase
+      }
+    }
+  }
 };
 
 export default config;
